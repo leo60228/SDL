@@ -54,6 +54,7 @@
 
 #ifdef __EMSCRIPTEN__
 #include <emscripten.h>
+#include "../events/SDL_displayevents.c"
 #endif
 
 /* Available video drivers */

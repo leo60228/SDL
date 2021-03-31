@@ -287,7 +287,7 @@ SDL_truncf(float x)
 double
 SDL_fmod(double x, double y)
 {
-#if defined(HAVE_FMOD)
+#if defined(HAVE_FMOD) || defined(__EMSCRIPTEN__)
     return fmod(x, y);
 #else
     return SDL_uclibc_fmod(x, y);
